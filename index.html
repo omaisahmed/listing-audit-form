@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset=UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Listing Audit | AMZ One Step</title>
+	<meta name=description content="">
+	<meta name=keywords content="">
+	<link rel="shortcut icon" href="https://www.amzonestep.com/site/images/amz-fav-icon.png">
+	<link href="https://www.amzonestep.com/new/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://www.amzonestep.com/new/css/all.min.css" rel="stylesheet">
+	<link href="https://www.amzonestep.com/css/contact.css" rel="stylesheet">
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+	<style>
+	input[type="checkbox"] {
+		transform: scale(1.5);
+	}
+	
+	.asterisk {
+		color: red;
+		margin-left: 3px;
+	}
+	
+	.theme-input-style {
+		border: 1px solid #ced4da;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="https://www.amzonestep.com"><img src=https://www.amzonestep.com/images/logo.png class="logo" height=70px></a>
+		</nav>
+	</header>
+	<div class="container py-4">
+		<div class="text-center mb-4">
+			<h1 class="display-4">Listing Audit Form</h1>
+			<p class="lead">Please fill out this form so we can prepare a free Listing Audit for you.</p>
+		</div>
+		<div class="row justify-content-center py-4">
+			<div class="col-md-8 order-md-12">
+				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+					<input type=hidden name=oid value="00D8c000002hzJR">
+					<input type=hidden name=retURL value="https://www.amzonestep.com/audit-submit">
+					<div class="card p-4">
+						<div class="card-body">
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">First Name<span class="asterisk">*</span></label>
+								<input class="form-control" type=text id="first_name" maxlength="40" name=first_name size="20" placeholder="First Name" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Last Name<span class="asterisk">*</span></label>
+								<input class="form-control" id="last_name" maxlength="80" name=last_name size="20" type=text placeholder="Last Name" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Email Address<span class="asterisk">*</span></label>
+								<input class="form-control" id="email" maxlength="80" name=email size="20" type=email placeholder="Email Address" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Brand Name<span class="asterisk">*</span></label>
+								<input class="form-control" id="00N8c00000dij3T" maxlength="50" name=00N8c00000dij3T size="20" type=text placeholder="Brand Name" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Listing Link<span class="asterisk">*</span></label>
+								<input class="form-control" id="00N8c00000dij3Y" maxlength="255" name=00N8c00000dij3Y size="20" type=text placeholder="Listing Link" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Conversion Rate<span class="asterisk">*</span></label>
+								<input class="form-control" id="00N8c00000dij3s" name=00N8c00000dij3s size="20" type=text placeholder="Conversion Rate" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Total Orders<span class="asterisk">*</span></label>
+								<input class="form-control" id="00N8c00000dij3x" maxlength="100" name=00N8c00000dij3x size="20" type=text placeholder="Total Orders" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">What is your biggest challenge?<span class="asterisk">*</span></label>
+								<input class="form-control" id="00N8c00000dij4H" maxlength="200" name=00N8c00000dij4H size="20" type=text placeholder="What is your biggest challenge?" required>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">What in your opinion can be improved?<span class="asterisk">*</span></label>
+								<br>
+								<select class="w-100 theme-input-style" id="00N8c00000divwx" name=00N8c00000divwx title="What in your opinion can be improved or:">
+									<option value="">--None--</option>
+									<option value="Listing Images">Listing Images</option>
+									<option value="Listing Content">Listing Content</option>
+									<option value="Video">Video</option>
+									<option value="A+ Content">A+ Content</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">How did you find out about our company?<span class="asterisk">*</span></label>
+								<br>
+								<select class="w-100 theme-input-style" id="00N8c00000dij6D" name=00N8c00000dij6D title="How did you find out about our company?">
+									<option value="Google">Google</option>
+									<option value="Social Media">Social Media</option>
+									<option value="Youtube">Youtube</option>
+									<option value="Referral">Referral</option>
+									<option value="LinkedIn">LinkedIn</option>
+									<option value="Podcast">Podcast</option>
+									<option value="Conference">Conference</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+							<p class="text-center" id="failure" style="display: none;color: red;">Please fill all the fields!</p>
+							<div class="mb-3 text-center">
+								<button id="submit" type=submit class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
